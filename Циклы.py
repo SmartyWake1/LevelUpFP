@@ -24,7 +24,7 @@ while True:
 
 
 
-for i in range(30)
+for i in range(30):
     print(i)
     if i == 6:
         break
