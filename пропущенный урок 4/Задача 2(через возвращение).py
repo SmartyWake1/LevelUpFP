@@ -18,8 +18,7 @@ lst = []
 for i in range(len(a)):
     lst.append(int(a[i]))
 
-change(lst)
-bc = c
+с = change(lst)
 print("Количество элементов списка: ", len(lst))
 print("Количество циклов проверки: ", len(lst) - 2)
 print("Введеный список: ", lst)
