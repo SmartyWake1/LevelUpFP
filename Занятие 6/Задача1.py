@@ -1,10 +1,10 @@
 def list_main(lst):
     if sorted(lst) == lst:
-        return "Отсортирован по возрастанию"
+        return True
     elif sorted(lst, reverse=True) == lst:
-        return "Отсортирован по убыванию"
+        return True
     else:
-        return "Не отсортирован"
+        return False
 
 
 a = input("Список чисел: ").split()
