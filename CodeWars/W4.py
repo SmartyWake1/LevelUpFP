@@ -18,10 +18,6 @@ print(sum(list))
 
 
 
-return n ** 3
-
-
-
 
 """
 a = 1
