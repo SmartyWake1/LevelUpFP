@@ -15,8 +15,7 @@ def enter_input():
 def enter_input2():
     a = input("Сколько чисел будет введено: ")
     if a.isdigit() == False:
-        print(f"Такой нумерации не может быть ({a})")
-        return False
+        return f"Такой нумерации не может быть ({a})"
     else:
         lst = []
         i = 1
@@ -24,15 +23,12 @@ def enter_input2():
             c = input(f"Введите число {i}: ")
             c_check = c.replace("-", "")
             if c_check.isdigit() == False:
-                print(f"Некорректный ввод '{c_check}'")
-                return False
+                return f"Некорректный ввод '{c}'"
                 break
             else:
                 lst.append(int(c))
                 if i < int(a):
                     print(f"Вы уже ввели {i} чисел: {lst}")
-                else:
-                    print("Введеный список чисел - ", lst)
     return(lst)
 
 
@@ -42,4 +38,4 @@ if choice_input == 1:
     result = enter_input()
 elif choice_input == 2:
     result = enter_input2()
-print(result)
+print("Результат: ", result)
