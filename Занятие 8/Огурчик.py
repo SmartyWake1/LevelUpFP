@@ -11,7 +11,6 @@ with open('OgyrezFile.pickle', "bw") as Ogyrez_file:
 with open('OgyrezFile.pickle', "br") as Ogyrez_file:
     My = pickle.load(Ogyrez_file)
     print(My)
-stat = 0
 score = 0
 if My[1] in "1":
     score += 1
