@@ -14,11 +14,11 @@ with open('OgyrezFile.pickle', "br") as Ogyrez_file:
 stat = 0
 score = 0
 if My[1] in "1":
-    score +=1
+    score += 1
 if My[2] in "2":
-    score +=1
+    score += 1
 if My[3] in "3":
-    score +=1
+    score += 1
 print(score)
 
                                                     #json
@@ -33,9 +33,9 @@ with open('NosokFile.json') as f:
 
 score = 0
 if My1["1"] in "1":
-    score +=1
+    score += 1
 if My1["2"] in "2":
-    score +=1
+    score += 1
 if My1["3"] in "3":
-    score +=1
+    score += 1
 print(score)
