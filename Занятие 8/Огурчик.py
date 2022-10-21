@@ -31,11 +31,11 @@ with open('NosokFile.json') as f:
     My1 = json.load(f)
     print(My1)
 
-score = 0
+score1 = 0
 if My1["1"] in "1":
-    score += 1
+    score1 += 1
 if My1["2"] in "2":
-    score += 1
+    score1 += 1
 if My1["3"] in "3":
-    score += 1
-print(score)
+    score1 += 1
+print(score1)
