@@ -1,4 +1,4 @@
-from DW.Generator_URL_for_HardParsing import Generator_URL
+from DW.Generator_URL import Generator_URL
 from DW.parser import Parser
 
 Parser()
