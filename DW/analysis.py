@@ -6,5 +6,5 @@ def analysis():
         print(a)
 
 
-
-analysis()
+if __name__ == "__main__":
+    analysis()

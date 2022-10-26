@@ -14,14 +14,15 @@ def Parser():
         if prod == "":
             break
         for model in prod:
-            print('Бренд:', model['brand'])
-            print('Цена:', model['salePriceU'] / 100, "руб.")
+            print('Name:', model['brand'])
+            print('Price:', model['salePriceU'] / 100, "руб.")
             print('ID:', model['id'])
             Pricelist[model['brand']] = {model['salePriceU'] / 100: model['id']}
             print(Pricelist)
 
     with open("ParserRusult.json", "w", encoding="utf8") as file_json:
         json.dump(Pricelist, file_json)
+
 
 if __name__ == "__main__":
     Parser()
